@@ -17,9 +17,9 @@
 
   2. In order to run the test, write: ./test
 
-### Screenshot from our project of the server and three clients:
+## Screenshot from our project of the server and three clients:
 
-![WhatsApp Image 2022-04-27 at 15 22 51](https://user-images.githubusercontent.com/93916792/165521448-9368c73f-a426-4211-81e9-437a1f5a4ea7.jpeg)
+![WhatsApp Image 2022-04-27 at 15 22 51](https://user-images.githubusercontent.com/93916792/165521448-9368c73f-a426-4211-81e9-437a1f5a4ea7.jpeg100x100)
 
 
 ![0001](https://user-images.githubusercontent.com/74601548/145879587-8a7c6a62-ab42-423d-b7a2-75372d13af6e.jpg)
