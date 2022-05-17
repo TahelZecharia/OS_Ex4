@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <errno.h> 
 #include <stdbool.h>
+#include <assert.h>
 #include "stack.h"
 
 
@@ -80,6 +81,8 @@ int main(){
         printf("\n   THE TEST ENDED SUCCESSFULLY \n");
         printf("\n*********************************\n\n");
     }
+
+    assert(successes == ('z' - 'a' + 1));
 
     pthread_mutex_destroy(&lock);
 

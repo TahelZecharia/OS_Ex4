@@ -19,6 +19,9 @@
 #include <stdbool.h>
 #include "malloc.h"
 
+# define malloc(x) _malloc(x);
+# define free(x) _free(x);
+
 void push(char* val); 
 void pop();
 void display();
@@ -80,7 +83,7 @@ void push(char* val) {
 
     printf("*** PUSH FUNC ***\n");
     printf("The pushed element is :%s\n", val);
-    struct Node* newnode = (struct Node*)_malloc(sizeof(struct Node));
+    struct Node* newnode = (struct Node*)malloc(sizeof(struct Node));
     strcpy(newnode->data,val);
     newnode->next = stack;
     stack = newnode;
@@ -101,7 +104,7 @@ void pop() {
       printf("The popped element is : %s\n", stack->data);
       struct Node* copy = stack;
       stack = stack->next;
-      _free(copy);
+      free(copy);
    }
 }
 

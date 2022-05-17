@@ -189,7 +189,20 @@ _malloc(size_t size)
 		newptr = split(ptr, size);
 		fl_add(newptr);
 	}
+	printf("* malloc func *\n");
 	return BLOCK_MEM(ptr);
+}
+
+void * calloc(size_t nelem, size_t elsize)
+{
+    void *p;
+
+    p = malloc (nelem * elsize);
+    if (p == 0)
+        return (p);
+
+    bzero (p, nelem * elsize);
+    return (p);
 }
 
 void
@@ -198,6 +211,7 @@ _free(void *ptr)
 	fl_add((block_t*)BLOCK_HEADER(ptr));
 	stats("before scan");
 	scan_merge();
+	printf("* free func *\n");
 }
 
 void
