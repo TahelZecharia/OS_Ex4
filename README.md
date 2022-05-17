@@ -11,6 +11,7 @@ The commands we executed for the stack are:
 2. POP
 3. TOP
 4. DISPLAY
+
 The stack uses the malloc and free of memory that we implemented ourselves.
 
 ## How to run our program:
