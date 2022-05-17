@@ -3,6 +3,16 @@
 
 ## Stav Zilber & Tahel Zecharia
 
+## Our Project:
+
+In this task we implemented a synchronized multi-threaded stack, and several clients can connect to it in parallel. The stack is synchronized between the clients.
+The commands we executed for the stack are:
+1. PUSH
+2. POP
+3. TOP
+4. DISPLAY
+The stack uses the malloc and free of memory that we implemented ourselves.
+
 ## How to run our program:
 
   1. Open the terminal and write: make all
